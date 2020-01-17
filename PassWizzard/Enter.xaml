@@ -1,0 +1,55 @@
+﻿<Window x:Class="PassWizzard.Enter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassWizzard"
+        mc:Ignorable="d"
+        Title="PassWizzard - Вход" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="ЛОГИН:" 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   VerticalAlignment="Bottom"
+                   Padding="3"
+                   FontSize="13" 
+                   FontFamily="Segoe Print"
+                   />
+
+        <TextBlock x:Name="txtLogin"
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   Margin="3"
+                   Background="Black"
+                   Foreground="White"
+                   FontSize="16"
+                   Padding="5"
+                   TextAlignment="Center"
+                   
+                   />
+
+        <TextBlock Text="ПАРОЛЬ:" 
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   VerticalAlignment="Bottom"
+                   Padding="3"
+                   FontSize="13" 
+                   FontFamily="Segoe Print"
+                   />
+        
+    </Grid>
+</Window>

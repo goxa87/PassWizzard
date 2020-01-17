@@ -10,20 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PassWizzard
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Enter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Enter : Window
     {
-        public MainWindow()
+        public Enter()
         {
             InitializeComponent();
-            frameMain.Content = new Frames.MainEnter();
         }
     }
 }

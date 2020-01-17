@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PassWizzard
+namespace PassWizzard.Frames
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainEnter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainEnter : Page
     {
-        public MainWindow()
+        public MainEnter()
         {
             InitializeComponent();
-            frameMain.Content = new Frames.MainEnter();
         }
     }
 }

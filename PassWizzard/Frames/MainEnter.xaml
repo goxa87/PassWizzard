@@ -1,0 +1,112 @@
+﻿<Page x:Class="PassWizzard.Frames.MainEnter"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PassWizzard.Frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainEnter">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="imgLogo"               
+               Width="70"
+               Height="70"
+               Grid.Column="1" Source="/PassWizzard;component/resourses/key.png"
+               >
+        </Image>
+
+        <TextBlock Text="ЛОГИН:" 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   VerticalAlignment="Bottom"
+                   Padding="3"
+                   FontSize="13" 
+                   FontFamily="Segoe Print"
+                   />
+
+        <TextBox x:Name="txtLogin"
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   Margin="3"
+                   Background="Black"
+                   Foreground="White"
+                   FontSize="16"
+                   Padding="3"
+                   TextAlignment="Center"
+                   
+                   />
+
+        <TextBlock Text="ПАРОЛЬ:" 
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   VerticalAlignment="Bottom"
+                   Padding="3"
+                   FontSize="13" 
+                   FontFamily="Segoe Print"
+                   />
+
+        <TextBox x:Name="txtPassword"
+                   Grid.Column="1"
+                   Grid.Row="4"
+                   Margin="3"
+                   Background="Black"
+                   Foreground="White"
+                   FontSize="16"
+                   Padding="3"
+                   TextAlignment="Center"
+                   
+                   />
+        <Button x:Name="btnEnter"
+                Grid.Column="1"
+                Grid.Row="5"
+                Margin="3"
+                Content="ВОЙТИ"
+                FontWeight="Bold"
+                FontFamily="Segoe Print"
+                FontSize="13"
+                />
+
+        <Button x:Name="btnForgot"
+                Grid.Column="1"
+                Grid.Row="6"
+                Margin="3"
+                Content="забыли пароль"
+                Background="#00000000"
+                FontWeight="Bold"
+                
+                FontFamily="Segoe Print"
+                FontSize="13" 
+                BorderBrush="{x:Null}"
+                />
+
+
+        <Button x:Name="btnReistration"
+                Grid.Column="1"
+                Grid.Row="7"
+                Margin="3"
+                Content="РЕГИСТРАЦИЯ"
+                FontWeight="Bold"
+                FontFamily="Segoe Print"
+                FontSize="13"
+                />
+
+    </Grid>
+</Page>
