@@ -27,7 +27,7 @@ namespace PassWizzard
         /// Созданный пароль
         /// </summary>
         public string Password { get; set; }
-
+        
         /// <summary>
         /// От чего пароль. Зачем он нужен
         /// </summary>
