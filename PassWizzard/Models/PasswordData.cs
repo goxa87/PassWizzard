@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PassWizzard
 {
     /// <summary>
-    /// Пароль и информация о нём
+    /// Данные для входа на внешний ресурс и информация о нём
     /// </summary>
     public class PasswordData
     {
@@ -24,7 +24,12 @@ namespace PassWizzard
         }
 
         /// <summary>
-        /// Созданный пароль
+        /// Логин для входа на внешний ресурс
+        /// </summary>
+        public string Login { get; set; }
+
+        /// <summary>
+        /// Созданный пароль для входа на внешний ресурс
         /// </summary>
         public string Password { get; set; }
         
@@ -37,6 +42,11 @@ namespace PassWizzard
         /// Надёжность пароля
         /// </summary>
         public string LevelOfSafety { get; set; }
+
+        /// <summary>
+        /// Логин пользователя, которому принадлжат данные для входа на внешний ресурс
+        /// </summary>
+        public string UsersLogin { get; set; }
 
     }
 }
