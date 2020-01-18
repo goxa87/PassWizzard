@@ -17,11 +17,24 @@ namespace PassWizzard
         /// </summary>
         /// <param name="Password">Пароль</param>
         /// <param name="Purpose">Зачем нужнен пароль</param>
-        public PasswordData(string Password, string Purpose)
+        public PasswordData(string Email, string Login, string Password, string Purpose, string Comment)
         {
+            this.Email = Email;
+            this.Login = Login;
             this.Password = Password;
             this.Purpose = Purpose;
+            this.Comment = Comment;
         }
+
+        /// <summary>
+        /// Пустой конструктор
+        /// </summary>
+        public PasswordData() { }
+
+        /// <summary>
+        /// Эл. почта для входа на внешний ресурс
+        /// </summary>
+        public string Email { get; set; }
 
         /// <summary>
         /// Логин для входа на внешний ресурс
@@ -37,6 +50,11 @@ namespace PassWizzard
         /// От чего пароль. Зачем он нужен
         /// </summary>
         public string Purpose { get; set; }
+
+        /// <summary>
+        /// Комментарий пользователя
+        /// </summary>
+        public string Comment { get; set; }
 
         /// <summary>
         /// Надёжность пароля

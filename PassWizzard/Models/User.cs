@@ -24,6 +24,8 @@ namespace PassWizzard
             this.Password = Password;
         }
 
+        public User () { }
+
         /// <summary>
         /// Имя пользователя
         /// </summary>
